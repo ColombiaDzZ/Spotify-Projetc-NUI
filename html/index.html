@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+        <title>Spotify</title>
+    </head>
+    <body>
+        <div class="ipad">
+            <img src="./imgs/tablet.png" class="dztify-frame" />
+            <div class="device">
+                <aside>
+                    <div class="logo"><img src="./imgs/tify.png" alt="Logo" /></div>
+                    <div class="general-options">
+                        <a class="option target-home active" data-target="home"> <i class="fas fa-home"></i> Inicio </a> <a class="option target-search" data-target="search"> <i class="fas fa-search"></i> Pesquisar </a>
+                    </div>
+                    <div class="playlist-options"><span>Playlists</span></div>
+                    <div class="playlists">
+                        <a class="option" data-gender="Funk São Paulo"> Funk São Paulo </a> <a class="option" data-gender="Mc RyanSP"> Mc RyanSP </a> <a class="option" data-gender="Mc IG"> Mc IG </a>
+                        <a class="option" data-gender="Mc PH"> Mc PH </a> <a class="option" data-gender="Mc Pipokinha"> Mc Pipokinha </a> <a class="option" data-gender="Funk BH"> Funk BH </a>
+                        <a class="option" data-gender="Mc Anjim"> Mc Anjim </a> <a class="option" data-gender="MC Rick"> MC Rick </a> <a class="option" data-gender="Funk RJ"> Funk RJ </a>
+                        <a class="option" data-gender="Mc Poze do Rodo"> Mc Poze do Rodo </a> <a class="option" data-gender="Mc Rodolfinho"> Mc Rodolfinho </a> <a class="option" data-gender="Mr. Catra"> Mr. Catra </a>
+                        <a class="option" data-gender="Racionais"> Racionais </a> <a class="option" data-gender="Vida loka"> Vida loka </a> <a class="option" data-gender="Jesus chorou"> Jesus chorou </a>
+                        <a class="option" data-gender="Negro drama"> Negro drama </a> <a class="option" data-gender="1KILO"> 1KILO </a> <a class="option" data-gender="Deixe - me - ir"> Deixe - me - ir </a>
+                        <a class="option" data-gender="Dia de caça"> Dia de caça </a>
+
+                        <!-- NEWS -->
+                        <a class="option" data-gender="DJ Alok"> DJ Alok </a> <a class="option" data-gender="DJ Marsmellow"> DJ Marsmellow </a> <a class="option" data-gender="David Guetta"> David Guetta </a>
+                        <a class="option" data-gender="Anitta"> Anitta </a> <a class="option" data-gender="Luan Santana"> Luan Santana </a> <a class="option" data-gender="Mateus e Kauan"> Mateus e Kauan </a>
+                        <a class="option" data-gender="Gustavo Lima"> Gustavo Lima </a> <a class="option" data-gender="Maiara e Maraisa"> Maiara e Maraisa </a> <a class="option" data-gender="Bruno e Marrone"> Bruno e Marrone </a>
+                        <a class="option" data-gender="Mc Kevin"> Mc Kevin </a> <a class="option" data-gender="Mc Paiva"> Mc Paiva </a> <a class="option" data-gender="Mc Sid"> Mc Sid </a>
+                        <a class="option" data-gender="Xamuel"> Xamuel </a> <a class="option" data-gender="DJ GBR"> DJ GBR </a> <a class="option" data-gender="Mc Livinho"> Mc Livinho </a>
+                        <a class="option" data-gender="Os Barões da Pisadinha"> Os Barões da Pisadinha </a>
+                    </div>
+                </aside>
+                <div class="container">
+                    <div class="resultado">
+                        <div class="account">
+                            <div class="account__search">
+                                <img
+                                    class="account__arrow"
+                                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIw%0D%0AMDAvc3ZnIj4KCiA8Zz4KICA8dGl0bGU+YmFja2dyb3VuZDwvdGl0bGU+CiAgPHJlY3QgZmlsbD0i%0D%0Abm9uZSIgaWQ9ImNhbnZhc19iYWNrZ3JvdW5kIiBoZWlnaHQ9IjQwMiIgd2lkdGg9IjU4MiIgeT0i%0D%0ALTEiIHg9Ii0xIi8+CiA8L2c+CiA8Zz4KICA8dGl0bGU+TGF5ZXIgMTwvdGl0bGU+CiAgPHBvbHln%0D%0Ab24gZmlsbD0iI2ZmZmZmZiIgaWQ9InN2Z18xIiBwb2ludHM9IjE2MCwxMTUuNCAxODAuNyw5NiAz%0D%0ANTIsMjU2IDE4MC43LDQxNiAxNjAsMzk2LjcgMzEwLjUsMjU2ICIvPgogPC9nPgo8L3N2Zz4="
+                                    alt="Ícono de atrás"
+                                />
+                                <img
+                                    class="account__arrow"
+                                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIw%0D%0AMDAvc3ZnIj4KCiA8Zz4KICA8dGl0bGU+YmFja2dyb3VuZDwvdGl0bGU+CiAgPHJlY3QgZmlsbD0i%0D%0Abm9uZSIgaWQ9ImNhbnZhc19iYWNrZ3JvdW5kIiBoZWlnaHQ9IjQwMiIgd2lkdGg9IjU4MiIgeT0i%0D%0ALTEiIHg9Ii0xIi8+CiA8L2c+CiA8Zz4KICA8dGl0bGU+TGF5ZXIgMTwvdGl0bGU+CiAgPHBvbHln%0D%0Ab24gZmlsbD0iI2ZmZmZmZiIgaWQ9InN2Z18xIiBwb2ludHM9IjE2MCwxMTUuNCAxODAuNyw5NiAz%0D%0ANTIsMjU2IDE4MC43LDQxNiAxNjAsMzk2LjcgMzEwLjUsMjU2ICIvPgogPC9nPgo8L3N2Zz4="
+                                    alt="Ícono de siguiente"
+                                />
+                                <input class="account__input" type="text" placeholder=" Buscar Música" />
+                            </div>
+                            <div class="account__info">
+                                <img class="account__photo" src="./imgs/spotify.png" alt="Foto de perfil" />
+                                <img
+                                    class="account__arrow account__menu"
+                                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIw%0D%0AMDAvc3ZnIj4KCiA8Zz4KICA8dGl0bGU+YmFja2dyb3VuZDwvdGl0bGU+CiAgPHJlY3QgZmlsbD0i%0D%0Abm9uZSIgaWQ9ImNhbnZhc19iYWNrZ3JvdW5kIiBoZWlnaHQ9IjQwMiIgd2lkdGg9IjU4MiIgeT0i%0D%0ALTEiIHg9Ii0xIi8+CiA8L2c+CiA8Zz4KICA8dGl0bGU+TGF5ZXIgMTwvdGl0bGU+CiAgPHBvbHln%0D%0Ab24gZmlsbD0iI2ZmZmZmZiIgaWQ9InN2Z18xIiBwb2ludHM9IjE2MCwxMTUuNCAxODAuNyw5NiAz%0D%0ANTIsMjU2IDE4MC43LDQxNiAxNjAsMzk2LjcgMzEwLjUsMjU2ICIvPgogPC9nPgo8L3N2Zz4="
+                                    alt="Ícono de ajustes"
+                                />
+                            </div>
+                        </div>
+                        <div class="song" id="search" style="display: none;"><h1 class="song__main-title loading">Pesquisando</h1></div>
+                        <div class="song" id="error" style="display: none;"><h1 class="song__main-title">Error, tente novamente</h1></div>
+                        <div class="song" id="song" style="display: none;">
+                            <h1 class="song__main-title">Resultados</h1>
+                            <div class="song__generic">
+                                <input class="song__button" type="button" value="REPRODUZIR" /> <label class="song__switch"> <input type="checkbox" /><span class="slider round"></span> </label>
+                            </div>
+                            <input class="song__input" type="text" placeholder="Filtrar" id="song__input" />
+                            <div class="song__item song__th">
+                                <div class="song__title">TÍTULO</div>
+                                <div class="song__artist">ARTISTA</div>
+                            </div>
+                            <div class="playlist_list"></div>
+                        </div>
+                    </div>
+                    <header>
+                        <div class="head-btns"><i class="fas fa-bars"></i></div>
+                        <div class="profile"><img src="./imgs/spotify.png?width=674&amp;height=676" alt="Profile" /> <span>Spotify</span></div>
+                    </header>
+                    <div class="collection-strip">
+                        <div class="title-strip">
+                            <h3>Os Melhores 2024</h3>
+                            <button>Ver todos</button>
+                        </div>
+                        
+                        <div class="inner-strip">
+                            <div class="box-item" data-gender="Luisa Sonza">
+                                <div class="box-item__image"><img src="./imgs/ls.png" /></div>
+                                <h4>Luisa Sonza</h4>
+                                <p>A braba.</p>
+                            </div>
+                            <div class="box-item" data-gender="Henrique e Juliano">
+                                <div class="box-item__image"><img src="./imgs/hj.jpg" /></div>
+                                <h4>Henrique e Juliano</h4>
+                                <p>Vem sofrer com eles.</p>
+                            </div>
+                            <div class="box-item" data-gender="Ana Castela">
+                                <div class="box-item__image"><img src="./imgs/ana.jpg" /></div>
+                                <h4>Ana Castela</h4>
+                                <p>A boiadera chegou bb.</p>
+                            </div>
+                            <div class="box-item" data-gender="Migo vou vida">
+                                <div class="box-item__image"><img src="./imgs/migo.jpg" /></div>
+                                <h4>Migo ou vida?</h4>
+                                <p>Ninguém ta puro!</p>
+                            </div>
+                            <div class="box-item" data-gender="Billie Eilish">
+                                <div class="box-item__image"><img src="./imgs/billie.jpg" /></div>
+                                <h4>Billie Eilish</h4>
+                                <p>Coração partido.</p>
+                            </div>
+                            <div class="box-item" data-gender="Zé neto e Cristiano">
+                                <div class="box-item__image"><img src="./imgs/zeneto.jpg" /></div>
+                                <h4>Zé neto e Cristiano</h4>
+                                <p>Eae, já me esqueceu?</p>
+                            </div>
+                            <div class="box-item" data-gender="Jão">
+                                <div class="box-item__image"><img src="./imgs/jao.png" /></div>
+                                <h4>Jão</h4>
+                                <p>Coração ferido.</p>
+                            </div>
+                            <div class="box-item" data-gender="Jorge e Mateus">
+                                <div class="box-item__image"><img src="./imgs/jm.jpg" /></div>
+                                <h4>Jorge e Mateus.</h4>
+                                <p>Simples e Romântico.</p>
+                            </div>
+                            <div class="box-item" data-gender="Sadstation">
+                                <div class="box-item__image"><img src="./imgs/sad.jpg" /></div>
+                                <h4>Sadstation</h4>
+                                <p>Um lugar para você chorar.</p>
+                            </div>
+
+                        <!-- NEWS -->
+                            <div class="box-item" data-gender="Racionais">
+                                <div class="box-item__image"><img src="./imgs/racionais.jpg" /></div>
+                                <h4>Racionais Mc's</h4>
+                                <p>Nada como um Dia após o Outro Dia.</p>
+                            </div>
+                            <div class="box-item" data-gender="Marilia Mendonça">
+                                <div class="box-item__image"><img src="./imgs/mr.jpg" /></div>
+                                <h4>Marilia Mendonça</h4>
+                                <p>A rainha também ta aqui!</p>
+                            </div>
+                            <div class="box-item" data-gender="Mc PH">
+                                <div class="box-item__image"><img src="./imgs/ph.jpg" /></div>
+                                <h4>Mc PH</h4>
+                                <p>Quem é os cara do momento?</p>
+                            </div>
+                            <div class="box-item" data-gender="DJ Wesley Gonzaga">
+                                <div class="box-item__image"><img src="./imgs/wel.jpg" /></div>
+                                <h4>DJ Wesley Gonzaga</h4>
+                                <p>Wesley Gonzaga é o nome do homi.</p>
+                            </div>
+                            <div class="box-item" data-gender="Edi & Samuel">
+                                <div class="box-item__image"><img src="./imgs/ebs.jpg" /></div>
+                                <h4>Edy & Samuel</h4>
+                                <p>Esqueça-me se for capaz.</p>
+                            </div>
+                            <div class="box-item" data-gender="Cristiano Araújo in The Cities">
+                                <div class="box-item__image"><img src="./imgs/cris.jpg" /></div>
+                                <h4>Cristiano Araújo</h4>
+                                <p>Eterno.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="player">
+                <audio src="" class="audio"></audio>
+                <div class="player__current">
+                    <div class="player__photo"></div>
+                    <div class="player__song"></div>
+                    <div class="player__artist"></div>
+                </div>
+                <div class="player__menu">
+                    <div class="player__control">
+                        <img class="player__icon player_random" src="./imgs/random.svg" alt="Random" /> <img class="player__icon player_anterior" src="./imgs/prev.svg" alt="Anterior" />
+                        <img class="player__icon player_play paused" src="./imgs/play.svg" alt="Player" /> <img class="player__icon player_proximo" src="./imgs/prox.svg" alt="Próximo" />
+                        <img class="player__icon player_loop" src="./imgs/loop.svg" alt="Loop" />
+                        <div class="player__time">
+                            <div class="player__time_bar"></div>
+                            <div class="player__time_duration"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="player__settings">
+                    <div class="player__volume"><div class="player__volume_bar"></div></div>
+                </div>
+            </div>
+        </div>
+        <div id="radios"></div>
+        <div id="error_show">
+            <div class="notification error"><span class="title">!&nbsp;&nbsp;&nbsp;&nbsp;Error</span> <span class="msg"></span> <span class="close">X</span></div>
+        </div>
+        <div id="player"></div>
+    </body>
+</html>
